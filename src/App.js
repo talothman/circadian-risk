@@ -81,6 +81,14 @@ class App extends Component {
     })
   }
 
+  // scrollToBottom = () => {
+  //   this.messagesEnd.scrollIntoView({ behavior: "smooth" });
+  // }
+  
+  // componentDidUpdate() {
+  //   this.scrollToBottom();
+  // }
+
   render() {
     return (
       <div className="App">
@@ -92,6 +100,11 @@ class App extends Component {
           </div>
           <UserList users={this.state.renderUserList} />
         </header>
+        {/* 
+        <div
+          ref={(el) => { this.messagesEnd = el; }}>
+        </div>
+        */}
       </div>
     );
   }
